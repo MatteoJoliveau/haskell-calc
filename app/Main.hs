@@ -12,4 +12,5 @@ main = do
   r <- return $ parseOp (head args)
   case r of
     Right e -> print $ (eval e :: Float)
+--    Right e -> print e
     Left e -> print e
